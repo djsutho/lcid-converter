@@ -2,11 +2,11 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
     <properties>
         <title>Project Changes</title>
-        <author email="programming@bernardomg.com">Bernardo Martínez Garrido</author>
+        <author email="djsutho@gmail.com">David Sutherland</author>
     </properties>
     <body>
         <release version="0.0.1" date="2022-01-01" description="First release">
-            <action dev="bmg" type="update">
+            <action dev="djsutho" type="update">
                 First release of the library.
             </action>
         </release>
