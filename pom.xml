@@ -46,15 +46,14 @@
 
    <developers>
       <developer>
-         <id>bmg</id>
-         <name>Bernardo Martínez Garrido</name>
-         <email>programming@bernardomg.com</email>
+         <id>djsutho</id>
+         <name>David Sutherland</name>
+         <email>djsutho@gmail.com</email>
          <url>https://github.com/djsutho</url>
-         <organizationUrl>https://github.com/djsutho</organizationUrl>
          <roles>
             <role>Developer</role>
          </roles>
-         <timezone>+1</timezone>
+         <timezone>Australia/Brisbane</timezone>
          <properties />
       </developer>
    </developers>
@@ -175,10 +174,8 @@
       <!-- ============================================== -->
       <!-- =========== DEPENDENCIES VERSIONS ============ -->
       <!-- ============================================== -->
+      <java.version>1.7</java.version>
       <junit.jupiter.version>5.9.1</junit.jupiter.version>
-      <mockito.version>4.9.0</mockito.version>
-<!--      <log4j.version>2.19.0</log4j.version>-->
-<!--      <slf4j.version>2.0.3</slf4j.version>-->
       <!-- ============================================== -->
       <!-- ============ PLUGIN CONFIGURATION ============ -->
       <!-- ============================================== -->
@@ -215,26 +212,6 @@
 
    <dependencies>
       <!-- ============================================== -->
-      <!-- ================== LOGGERS =================== -->
-      <!-- ============================================== -->
-      <!--<dependency>
-         <groupId>org.slf4j</groupId>
-         <artifactId>slf4j-api</artifactId>
-         <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-slf4j-impl</artifactId>
-         <version>${log4j.version}</version>
-         <scope>provided</scope>
-      </dependency>
-      <dependency>
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-core</artifactId>
-         <version>${log4j.version}</version>
-         <scope>provided</scope>
-      </dependency>-->
-      <!-- ============================================== -->
       <!-- ======= TEST ENVIRONMENT DEPENDENCIES ======== -->
       <!-- ============================================== -->
       <dependency>
@@ -255,13 +232,6 @@
                <artifactId>junit</artifactId>
             </exclusion>
          </exclusions>
-      </dependency>
-      <dependency>
-         <!-- Mockito -->
-         <groupId>org.mockito</groupId>
-         <artifactId>mockito-core</artifactId>
-         <version>${mockito.version}</version>
-         <scope>test</scope>
       </dependency>
    </dependencies>
 
@@ -312,6 +282,14 @@
                   <version>${site.skin.version}</version>
                </dependency>
             </dependencies>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>7</source>
+               <target>7</target>
+            </configuration>
          </plugin>
       </plugins>
    </build>
